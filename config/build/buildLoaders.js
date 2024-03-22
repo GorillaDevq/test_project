@@ -1,6 +1,7 @@
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
-export default function buildLoaders() {
+function buildLoaders() {
     const babelLoader = {
         test: /\.js$/,
         use: 'babel-loader',
@@ -39,8 +40,10 @@ export default function buildLoaders() {
 
     return [
         babelLoader,
-        cssLoader,
         imageLoader,
         fontLoader,
+        cssLoader,
     ]
 }
+
+module.exports = buildLoaders

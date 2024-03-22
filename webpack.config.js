@@ -1,10 +1,10 @@
-import path from "path";
-import { fileURLToPath } from 'url';
-import buildWebpackConfig from "./config/build/buildWebpackConfig.js";
+const path = require('path');
+// import path from "path";
+// import { fileURLToPath } from 'url';
+// import buildWebpackConfig from "./config/build/buildWebpackConfig.js";
+const buildWebpackConfig = require('./config/build/buildWebpackConfig.js')
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-export default (env) => {
+module.exports = (env) => {
     const paths = {
         entry: path.resolve(__dirname, 'src', 'pages', 'index.js'),
         build: path.resolve(__dirname, 'build'),
@@ -23,4 +23,4 @@ export default (env) => {
     });
 
     return config;
-};
+}

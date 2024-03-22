@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website about chess tournament" />
-    <meta name="keywords" content="Chess" />
-    <meta name="authors" content="Gorilla.dev" />
-    <title>Chess</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website about chess tournament" />
+  <meta name="keywords" content="Chess" />
+  <meta name="authors" content="Gorilla.dev" />
+  <title>Chess</title>
 </head>
 <body class="wrapper"><!--Обертка-->
 <div class="root"><!--Страница-->
-<h1>asdsadsad</h1>
+  <header class="header"><!--Заголовок-->
+    <ul><!--Бэкграунд хедера-->
+      <li class="background"></li>
+      <li class="background__sun"></li>
+      <li class="background__sun-text"></li>
+      <li class="background__king"></li>
+      <li class="background__queen"></li>
+      <li class="background__city-path"></li>
+      <li class="background__city"></li>
+      <li class="background__pawn"></li>
+      <li class="background__horse"></li>
+    </ul>
+    <div class="header__content"><!--Контент хедера-->
+      <img class="header__logo" src="<%=require('./image/logo.svg')%>" >
+      <h1 class="header__title">
+        Превратите уездный город в столицу земного шара
+      </h1>
+      <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+      <div class="header__btn-container">
+        <button class="header_btn">Поддержать шахматную мысль</button>
+        <button class="header_btn">Подробнее о турнире</button>
+      </div>
+    </div>
+  </header>
+  <main><!--Тело-->
+    <div class="running-line">
+      Дело помощи утопающим — дело рук самих утопающих! &#183;
+      Шахматы двигают вперед не только культуру, но и экономику! &#183;
+      Лед тронулся, господа присяжные заседатели! &#183;
+      Дело помощи утопающим — дело рук самих утопающих! &#183;
+      Шахматы двигают вперед не только культуру, но и экономику! &#183;
+      Лед тронулся, господа присяжные заседатели! &#183;
+    </div>
+  </main>
+  <footer><!--Подвал-->
+
+  </footer>
+  <h1>asdsadsad</h1>
+  <img src="<%=require('./image/horse.png')%>">
 </div>
 </body>
 </html>

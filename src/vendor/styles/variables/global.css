@@ -1,0 +1,8 @@
+:root {
+  /*Шрифты*/
+  --font-family-main: 'Golos-text', Arial, sans-serif;
+  --font-size-large: 6rem;
+
+  /*Размер страницы*/
+  --max-width-page: 1366px;
+}

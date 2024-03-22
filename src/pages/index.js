@@ -1,1 +1,3 @@
-console.log(23124124)
+import './index.css'
+
+console.log(23124124213123)

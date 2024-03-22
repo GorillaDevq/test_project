@@ -1,0 +1,145 @@
+/*Подключаем normalize*/
+@import "../vendor/styles/normalize.css";
+
+/*Подключаем шрифты*/
+@import "../vendor/fonts/fonts.css";
+
+/*Подключаем глобальные стили*/
+@import "../vendor/styles/variables/global.css";
+/*Подключаем root*/
+@import "../blocks/root/root.css";
+
+h1 {
+    font-family: 'Golos-text', Arial, sans-serif;
+}
+
+.header {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  background-color: #E9DED4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../image/background_image.png");
+  background-position: center;
+  mix-blend-mode: color-burn;
+}
+
+header__content {
+
+}
+
+.background__sun {
+  width: 660px;
+  height: 660px;
+  background: url("../image/Sun.png");
+  position: absolute;
+  right: 34px;
+  bottom: 84px;
+  mix-blend-mode: normal;
+}
+
+.background__sun-text {
+  width: 660px;
+  height: 660px;
+  background: url("../image/Sun text.png") no-repeat top;
+  background-blend-mode: color-burn;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  right: 34px;
+  bottom: 97px;
+}
+
+.background__king {
+  width: 104px;
+  height: 266px;
+  transform: rotate(-6deg);
+  background: url("../image/King.png") no-repeat;
+  position: absolute;
+  left: 742px;
+  top: 275px;
+}
+
+.background__queen {
+  width: 113px;
+  height: 252px;
+  transform: rotate(7deg);
+  background: url("../image/Queen.png") no-repeat;
+  position: absolute;
+  right: 174px;
+  bottom: 275px;
+}
+
+.background__city {
+  width: 1623px;
+  height: 452px;
+  background: url("../image/city.png") no-repeat;
+  position: absolute;
+  bottom: -22px;
+}
+
+.background__city-path {
+  width: 1604px;
+  height: 464px;
+  background: url("../image/Path.png") no-repeat;
+  position: absolute;
+  bottom: -23px;
+  z-index: 1;
+}
+
+.background__pawn {
+  width: 82px;
+  height: 122px;
+  background: url("../image/Pawn.png") no-repeat;
+  position: absolute;
+  right: 45px;
+  bottom: 20px;
+  z-index: 1;
+}
+
+.background__horse {
+  width: 154px;
+  height: 244px;
+  background: url("../image/Horse.png") no-repeat;
+  position: absolute;
+  bottom: -38px;
+  right: 357px;
+  transform: rotate(-10.6deg);
+  z-index: 1;
+}
+
+.running-line {
+  height: 60px;
+  width: max-content;
+  font-size: 22px;
+  line-height: 24px;
+  background-color: #F54932;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 12px;
+  text-transform: uppercase;
+  animation: animate 40s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-50% + 8px));
+  }
+}
